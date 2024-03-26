@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: url('../imagens/fundo-madeira.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+.relative {
+    position: relative;
+}
+
+.container iframe {
+    position: absolute;
+    width: 267px;
+    height: 471px;
+    left: 22px;
+    top: 80px;
+    overflow: auto;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.redes-sociais .botao {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+}
+
+.redes-sociais .botao:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform .3s, border 1s;
+}
+
+footer {
+    position: absolute;
+    display: block;
+    bottom: -1.3vh;
+    width: 100vw;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
